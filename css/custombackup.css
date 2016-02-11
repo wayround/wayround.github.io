@@ -1,0 +1,299 @@
+/* Cameron's Custom CSS */
+/* GITHUB: [github url]; */
+
+
+/* GENERAL */
+
+a {
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+hr {
+	color: rgba(0,0,0,0)!important;
+	border: transparent!important;
+	margin: 30px auto;
+}
+
+
+
+/*   NAV BAR   */
+
+.navbar-default {
+	background-color: rgba(0,0,0,1);
+	border-bottom: rgba(0,0,0,1);
+}
+
+.navbar-default .navbar-header .navbar-brand {
+    text-transform: uppercase;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial ,sans-serif;
+    font-weight: 400;
+    color: rgba(255,255,255,0.8);
+}
+
+.navbar-default .navbar-header .navbar-brand:hover {
+	color: rgba(255,255,255,1);
+}
+
+.navbar-default .navbar-right {
+	text-transform: uppercase;
+	font-family: 'Open Sans', 'Helvetica Neue', Arial ,sans-serif;
+    font-weight: 700;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: rgba(255,255,255,0.8);
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+	color: rgba(255,255,255,1);
+}
+
+.navbar-default .navbar-nav > li .active-tab  {
+	color: rgba(255,255,255,1);
+}
+
+.navbar-default .navbar-header .active-tab {
+	color: rgba(255,255,255,1);
+}
+
+
+
+/*   HEADER   */
+
+header {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    text-align: center;
+    color: rgba(255,255,255,1);
+ 
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+header .header-content {
+    position: relative;     /* for blog version, change padding to bring title to the bottom */
+    width: 100%;
+    padding: 150px 15px;
+    text-align: center;
+    padding-bottom: 50px;
+    top:auto;
+    transform:none;
+    background-color:red;
+
+}
+
+header .header-content .header-content-inner {
+	position:relative;
+}
+
+header .header-content .header-content-inner h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 60px;
+}
+
+header .header-content .header-content-inner p {
+    margin-bottom: 50px;
+    font-size: 16px;
+    font-weight: 300;
+    color: rgba(255,255,255,1);
+    font-family: 'Open Sans', 'Helvetica Neue', Arial ,sans-serif;
+    font-weight: 300;
+}
+
+
+
+
+
+@media(min-width:768px) {
+	header {
+		/*height: 100vh; */   /* change for home page! */  /* as percentage of screen height ... does it work on IE ? */
+
+	}
+
+	header .header-content {
+		padding: 300px 15px;
+		padding-bottom: 150px;
+	}
+}
+
+
+
+/*   BLOG POST   */
+
+.blog-post-tags a {
+	color: rgba(0,0,0,0.7);
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.blog-post-tags a:hover {
+	color: rgba(0,0,0,1);
+}
+
+.blog-post {
+	padding-top: 40px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.blog-post-body {
+
+}
+
+.blog-post-body p {
+	margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+    font-family: Merriweather, 'Helvetica Neue', Arial, sans-serif;
+
+}
+
+
+
+@media(min-width: 450px){
+	.blog-post {
+		padding-top: 100px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*   MORE BLOG POSTS   */
+
+.bg-primary {
+	background-color: black;
+}
+
+
+/*   PORTFOLIO - MORE BLOG POSTS   */
+
+.portfolio-container .col-lg-4 {
+    padding: 10px 10px 10px 10px;
+}
+
+.portfolio-box {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 650px;
+}
+
+.portfolio-box .portfolio-box-caption {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    opacity: 1;
+    background: rgba(0,0,0,0.6);
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content,
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content:hover {  /* hover included because it's all part of a giant link element */
+    position: absolute;
+    top: 5%;
+    width: 100%;
+    text-align: left;
+    min-height: 100%;
+    color: rgba(255,255,255,1);
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content-tags {
+	bottom: 0;
+	position: absolute;
+	padding: 10px 15px;
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content-tags .portfolio-tags a,
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content-tags .portfolio-tags a:hover {
+	font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+	font-size: 14px;
+	color: rgba(255,255,255,1);
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content-tags .portfolio-tags a:hover {
+	text-decoration: underline;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content-tags .portfolio-tags {
+	position: absolute;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .post-title,
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .post-description,
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .portfolio-tags {
+    padding: 0 15px;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .post-title {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .post-description {
+    font-size: 14px;
+    color: rgba(255,255,255,0.8);
+}
+
+.portfolio-box:hover .portfolio-box-caption {
+    opacity: 1;
+}
+
+.post-title {
+	margin-bottom: 10px; /* adding some space between the title and the decription */
+}
+
+.portfolio-tags {
+	bottom: 0;
+}
+
+
+@media(min-width:450px) {
+	.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .post-title {
+		font-size: 2em;
+	}
+
+	.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .post-description {
+		font-size: 16px;
+	}
+
+	.portfolio-box .portfolio-box-caption .portfolio-box-caption-content-tags .portfolio-tags a {
+		font-size: 16px;
+	}
+	.portfolio-box .portfolio-box-caption {
+		opacity: 0;
+	}
+}
