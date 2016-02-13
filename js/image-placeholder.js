@@ -2,7 +2,7 @@
 
 
 
-/*
+
 
 $('#carousel-example-generic > .carousel-inner > .item > div[rel]').each(function() {
     var rel  = $(this).attr('rel');
@@ -15,7 +15,6 @@ $('#carousel-example-generic > .carousel-inner > .item > div[rel]').each(functio
 
     if (img.complete) img.onload();
 });
-*/
 
 
 
@@ -23,6 +22,7 @@ $('#carousel-example-generic > .carousel-inner > .item > div[rel]').each(functio
 
 
 
+/*
 
 $(window).bind("load", function() {
    
@@ -37,3 +37,4 @@ $('#carousel-example-generic > .carousel-inner > .item > div[rel]').each(functio
 
 });
 	
+*/
