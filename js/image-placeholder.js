@@ -1,9 +1,6 @@
 
 
 
-
-
-
 $('#carousel-example-generic > .carousel-inner > .item > div[rel]').each(function() {
     var rel  = $(this).attr('rel');
     var self = $(this);
@@ -15,11 +12,7 @@ $('#carousel-example-generic > .carousel-inner > .item > div[rel]').each(functio
 
     if (img.complete) img.onload();
 });
-
-
-
-
-
+	
 
 
 
@@ -37,4 +30,4 @@ $('#carousel-example-generic > .carousel-inner > .item > div[rel]').each(functio
 
 });
 	
-*/`
+*/
