@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>USER GUIDE</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="guide.css" type="text/css">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                </button>
+
+
+                <a href="#" class=" page-scroll active-tab pull-left img-responsive">
+                <a class="navbar-brand page-scroll active-tab" href="#page-top">USER GUIDE</a>
+
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+ 
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <section id="blog-post">
+        <div class="container" style="padding-top: 80px; width: 70%">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 blog-post">
+                    <div class="blog-post-body">
+
+
+<h1>A User’s Guide to OpenBCI</h1>
+
+<p>This tutorial covers all the steps from the initial set-up to the completion of a BCI (brain-computer interface) project. Working with OpenBCI’s software is easy and setup can be completed in under a half hour, making it accessible to anyone interested in exploring the brain. At the same time, because OpenBCI is open-source, it provides programmers and experts with all the flexibility needed to create a great project.</p>
+
+<div class="table-of-contents">
+<h2>Contents</h2>
+<ul>
+<li>What does it do?</li>
+<li>Why it works</li>
+<li>The setup: software</li>
+<ul>
+<li>Getting it to work</li>
+<li>What am I looking at?</li>
+</ul>
+<li>The setup: hardware</li>
+<li>Testing things out</li>
+<ul>
+<li>Better recording</li>
+</ul>
+<li>Putting it all together</li>
+</ul>
+</div>
+
+<h2>What does it do?</h2>
+
+<p>Electrical activity is the stuff of thought. Whenever a person thinks, there’s a corresponding pattern of electricity in their brain. Different patterns of thought lead to different patterns of electrical activity. The faint echo of this activity is even active on the surface of a person’s head. This is where OpenBCI comes in.</p>
+
+<p>A brain’s electrical activity can be measured by OpenBCI’s electrodes. OpenBCI’s software then makes sense of the information being collected by the electrodes. It’s that simple. OpenBCI is a mind-reader, taking thoughts and translating them into a form that computers can understand.</p>
+
+<h2>Why it works</h2>
+
+<p>OpenBCI isn’t the only tool to translate your thoughts. Other systems like <a href="www.google.com">NeuroSky</a>, <a href="www.google.com">Emotiv</a>, and <a href="www.google.com">Muse</a> are fun to play around with, but aren’t able to capture the same level of detail as clinical and scientific BCI systems. These clinical and scientific systems have the best possible level of detail, but are unaffordable for the average user.</p>
+
+<p>OpenBCI captures almost as much detail as the professional systems while being as cheap as the normal setups. Also, because all of its software is <a href="www.google.com">open-source</a>, there exists a large community of hobbyists on the internet sharing ideas and working together. This lowers the barrier of entry significantly, allowing almost anyone to get started with OpenBCI.</p>
+
+<h2>The set-up: software</h2>
+
+<p>Go to the <a href="www.google.com">Downloads Page</a> to find the latest version of the software that’s compatible with your operating system.</p>
+
+<p>More specific installation information can be found on the <a href="www.google.com">OpenBCI Docs Page</a>.</p>
+
+<h3>Getting it to work</h3>
+
+<ul>
+<li>Make sure that the system running OpenBCI has a Java Runtime Environment installed. This is a program that runs Java applications. You can do this by visiting the Oracle website or in Linux with the terminal command <span class="code">sudo apt-get install default-jre</span>.</li>
+<li>Run the OpenBCI application with administrator privileges, as this program needs to have access to your computer’s serial port. This can be done with the Linux command <span class="code">cd ~/application.linux64 && sudo bash OpenBCI_GUI</span>.</li>
+<li>Navigate to the top of the GUI (graphical user interface). Under “Data Sources" select “SYNTHETIC (algorithmic)". This runs the display with dummy-data.</li>
+</ul>
+
+&nbsp;<div class="image">
+<img src="./userguidepics/img1.png">
+</div>&nbsp;
+<h3>What am I looking at?</h3>
+
+&nbsp;<div class="image">
+<img src="./userguidepics/img2.png">
+</div>&nbsp;
+
+<p>In the EEG window are eight channels (labeled in colored boxes to their left), one for each electrode. Later a jagged line will appear in each channel.The shape of the line represents activity: on the x-axis is time and on the y-axis is level of activation. Spikes mean that more action has been recorded from that electrode at a given time, and troughs mean that less activity has been recorded.</p>
+
+<h2>The setup: hardware</h2>
+&nbsp;<div class="image">
+<img src="./userguidepics/img3.png">
+</div>
+<div class="image-caption" style="text-align:center">1: battery pack; 2: OpenBCI board; 3: bluetooth dongle; 4: electrodes</div>&nbsp;
+
+<p>The activity in each channel is just dummy information. After all, the hardware isn’t even set up yet. However, after following the next few steps the electrodes will be able to record electrical activity:</p>
+
+<ul>
+<li> 1. Plug the bluetooth dongle into a USB port in your computer.</li>
+<li> 2. Plug the battery pack and each electrode into its corresponding port on the OpenBCI board. Make sure that the board’s switch is set to “PC".</li>
+<li> 3. Close the OpenBCI application. Open it again, with administrator privileges.</li>
+<li> 4. Select “LIVE (from OpenBCI)" from the “Data Sources" tab. </li>
+<li> 5. Navigate to “WRITE TO SD (Y/N)" and select “Do not write to SD". When you’re making recordings in the future, you’ll leave this setting turned on.</li>
+</ul>
+
+&nbsp;<div class="image">
+<img src="./userguidepics/img4.png">
+</div>&nbsp;
+
+<p>To see activity being recorded from the electrodes, click “Start System" and then “Start Data Stream".</p>
+
+<h2>Testing things out</h2>
+
+<p>Place one of the electrodes firmly against the skin of your wrist as pictured below. Secure with tape if necessary.</p>
+
+&nbsp;<div class="image">
+<img src="./userguidepics/img5.png">
+</div>&nbsp;
+
+<p>You should notice the activity in the electrode’s channel changing as it touches the surface of your skin (picture below). This is because the electrode is recording electrocardiographic (EKG) information--the electrical activity of your heartbeat. The activity will not, however, look like an EKG in a doctor’s office. This is because a grounding electrode and conductive paste are necessary for both successful EKG and BCI.</p>
+
+&nbsp;<div class="image">
+<img src="./userguidepics/img6.png">
+</div>&nbsp;
+
+<h3>Better recording</h3>
+
+<p>Each of the eight electrodes is color coded [<a href="www.google.com">see here </a>]. To measure EKG, you’ll need two of these: electrode 1 and SRB.</p>
+
+<p>Make sure that both electrodes are firmly connected to their respective locations on the OpenBCI board.</p>
+
+<p>Locate the “10-20 paste" and apply this to the bottom surface of both electrodes. This allows a greater area of contact to be made between the electrode and your skin, further increasing the fidelity of the recordings.</p>
+
+<p>Place your gray-colored recording electrode (electrode 1) on your wrist as before. Place the second white-colored SRB electrode on another part of your arm--the precise location does not matter. If needed, secure these electrodes with tape or a strip of cloth.</p>
+
+&nbsp;<div class="image">
+<img src="./userguidepics/img7.png">
+</div>&nbsp;
+
+<p>Now you should notice on your OpenBCI GUI that channel 1 is producing regular spikes, corresponding to your heartbeat. The pattern of electrical activity that your heart produces is much more consistent than the activity produced by your brain.</p>
+
+<h2>Putting it all together</h2>
+
+<p>To produce BCI recordings, which involve placing electrodes directly onto the scalp, it’s necessary to have a second person act as an assistant.</p>
+
+<p>BCI uses the same logic as EKG, except with a different number of electrodes placed in different locations. There are many different ways to organize these electrodes on the scalp, and the particular orientation of electrodes will depend on the project you’re pursuing. However, there is a standard layout for an 8-electrode system, shown in the image below.</p>
+
+&nbsp;<div class="image">
+<img src="./userguidepics/img8.png">
+</div>&nbsp;
+
+<p>To begin your BCI recording, close the OpenBCI application. Insert all electrodes into their respective locations on the OpenBCI board. Then restart the application with the same settings as listed in <a href="www.google.com">the setup: hardware</a>.</p>
+
+<p>After applying paste to an electrode, part your assistant’s hair and place the electrode directly against their scalp. Repeat until all electrodes are in the locations listed on the electrode map above.</p>
+
+<p>If you are worried about electrodes becoming loose, place the EEG cap over your assistant’s hair. Electrodes can be clamped into place by the pins in this cap. However, this cap is optional. BCI enthusiasts have used hats, shower caps, and beanies to secure their electrodes.</p>
+
+&nbsp;<div class="image">
+<img src="./userguidepics/img9.png">
+</div>&nbsp;
+
+<p>On the OpenBCI application’s GUI, you will now see the electrical activity being recorded by each electrode. This activity will appear to be much more random than the EKG activity.</p>
+
+<h2>Possibilities</h2>
+
+<p>Now that your system is set up, the possibilities are endless. OpenBCI can be used to <a href="www.google.com">control drones</a>, <a href="www.google.com">play games</a>, and in <a href="www.google.com">meditation</a>. New uses for OpenBCI are being created every day. And because OpenBCI is open-source, it’s also possible to create new uses for yourself. Some of these applications can be found <a href="www.google.com">here</a>.</p>
+
+<p>When you install a new OpenBCI package, this will replace the standard OpenBCI GUI. After installing your new package, you will usually set up your electrodes in the same way as described above; however, some projects use slightly different arrangements.</p>
+
+<p>OpenBCI is the world’s only fully open-source BCI system, allowing both amateurs and professionals to hack their brains. Thanks for your interest in OpenBCI.</p>
+
+
+
+
+
+                
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                    </ul>
+                    <p class="copyright text-muted text-center">Cameron Smith</p>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script>
+
+</body>
+
+</html>

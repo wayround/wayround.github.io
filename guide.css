@@ -1,0 +1,16 @@
+img {
+	max-width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+
+.table-of-contents {
+	font-size: 20px;
+}
+
+.code {
+	font-family: verdana;
+	font-size: 12px;
+	background-color: rgba(240,240,100,0.7);
+}
